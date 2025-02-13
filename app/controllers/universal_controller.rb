@@ -16,6 +16,8 @@ class UniversalController < ApplicationController # precreated class that we wan
       @outcome = "won"
     end
     render({ :template => "all_views_MF/results_view_MF" }) # these render lines are all the same because I originally designed the HTML pages to accept the same input (using instance variables) regardless of which move the page was for
+      # render is the standard method for showing the user the contents of a view page
+      # :template is the parameter that render uses when calling a page that contains both HTML and Ruby
   end
 
   def paper
